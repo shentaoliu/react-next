@@ -30,7 +30,7 @@ export default function Home() {
               关于
             </Link>
             <Link
-              href="/pages-router"
+              href="/pages-router_old"
               className="hover:text-gray-900 transition-colors"
             >
               旧版示例

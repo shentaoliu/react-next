@@ -39,7 +39,7 @@ export default function ISRPage({ buildTime, randomFact }: ISRProps) {
       </div>
 
       <div style={{ marginTop: "30px" }}>
-        <Link href="/pages-router" style={{ color: "blue" }}>
+        <Link href="/pages-router_old" style={{ color: "blue" }}>
           返回旧版演示页
         </Link>
         {" | "}
@@ -60,7 +60,7 @@ export const getStaticProps: GetStaticProps<ISRProps> = async () => {
   return {
     props: {
       buildTime: new Date().toISOString(),
-      randomFact: data.text,
+      randomFact: data.text || "无法获取冷知识",
     },
     // ISR 核心配置：最多每 10 秒重新生成一次页面
     revalidate: 10,

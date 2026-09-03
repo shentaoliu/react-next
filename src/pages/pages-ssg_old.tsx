@@ -37,7 +37,7 @@ export default function SSGPage({ buildTime, posts }: SSGProps) {
       </div>
 
       <div style={{ marginTop: "30px" }}>
-        <Link href="/pages-router" style={{ color: "blue" }}>
+        <Link href="/pages-router_old" style={{ color: "blue" }}>
           返回旧版演示页
         </Link>
         {" | "}
